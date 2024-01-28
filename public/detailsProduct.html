@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETALLES</title>
+</head>
+<body>
+    <nav style="margin-left: auto; margin-right: auto; width: 150px;">
+        <ul id="list-products"></ul>
+    </nav>
+    <h2 style="text-align: center;">Ver detalles de un producto</h2>
+    <form action="" method="get" style="display: flex; flex-direction: column; width: 300px; margin-left: auto; margin-right: auto; margin-top: 10px;">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id" required>
+        <button type="button" onclick="getProduct()">VER DETALLES</button>
+    </form>
+    <nav style="margin-left: auto; margin-right: auto; width: 150px; padding: 20px;">
+        <ul id="details" style="list-style: none;"></ul>
+    </nav>
+    <script src="requestProducts.js"></script>
+</body>
+</html>

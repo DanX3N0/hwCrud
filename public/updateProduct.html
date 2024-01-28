@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE</title>
+</head>
+<body>
+    <nav style="margin-left: auto; margin-right: auto; width: 150px;">
+        <ul id="list-products"></ul>
+    </nav>
+    <h2 style="text-align: center;">ACTUALIZAR</h2>
+    <form action="update-product" method="PUT" style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; width: 350px;">
+        <label for="id">ID:</label>
+        <input type="number" name="id" id="id">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="description">Descripcion:</label>
+        <input type="text" name="description" id="description" required>
+        <label for="price">Precio:</label>
+        <input type="text" name="price" id="price" required>
+        <button type="button" onclick="updateProduct()">ACTUALZAR PRODUCTO</button>
+    </form>
+    <script src="requestProducts.js"></script>
+</body>
+</html>

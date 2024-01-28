@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE</title>
+</head>
+<body>
+    <form action="/products" method="POST" style="display: flex; flex-direction: column; width: 300px; margin-left: auto; margin-right: auto; margin-top: 75px;">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="description">Descripcion:</label>
+        <input type="text" name="description" id="description" required>
+        <label for="price">Precio:</label>
+        <input type="number" name="price" id="price" required>
+        <button type="submit">Agregar producto</button>
+    </form>
+</body>
+</html>
